@@ -101,32 +101,38 @@ The Streamlit web application allows users to:
 -Data-driven decision-making support
 
 ## 7. Project Structure
+## 7. Project Structure
+
+```
 FUEL_CONSUMPTION_PREDICTION/
 │
-├── README.md                         # Project documentation
-├── requirements.txt                  # Required Python libraries
+├── README.md                  # Project documentation
+├── requirements.txt           # Required Python libraries
 │
 ├── data/
-│   └── fuel_data.csv                 # Dataset used for training and evaluation
+│   └── fuel_data.csv          # Dataset used for training and evaluation
 │
 ├── backend/
-│   ├── train_model.py                # Script to train and evaluate the ML model
-│   ├── app.py                        # Main Streamlit web application
-│   ├── app_advanced.py               # Extended/advanced application logic
-│   ├── predict_fuel_interactive.py   # Terminal-based interactive prediction
-│   ├── predict_fuel_advanced.py      # Advanced prediction script
-│   ├── .gitignore                    # Git ignore rules
+│   ├── train_model.py         # Script to train and evaluate the ML model
+│   ├── app.py                 # Main Streamlit web application
+│   ├── app_advanced.py        # Extended / advanced application logic
+│   ├── predict_fuel_interactive.py  # Terminal-based interactive prediction
+│   ├── predict_fuel_advanced.py     # Advanced prediction script
 │   │
 │   ├── model/
-│   │   ├── fuel_model.pkl           # Trained machine learning model
-│   │   └── selector.pkl             # Feature selector used during training
+│   │   ├── fuel_model.pkl     # Trained machine learning model
+│   │   └── selector.pkl       # Feature selector used during training
 │   │
-│   └── venv/                        # Virtual environment (ignored in Git)
+│   └── venv/                  # Virtual environment (ignored in Git)
 │
 ├── frontend/
-│   ├── index.html                  # Frontend HTML page
-│   ├── script.js                   # JavaScript logic
-│   └── style.css                   # CSS styling
+│   ├── index.html             # Frontend HTML page
+│   ├── script.js              # JavaScript logic
+│   └── style.css              # CSS styling
+│
+└── .gitignore                 # Git ignore rules
+```
+
 
 # Web Application (Streamlit)
 
