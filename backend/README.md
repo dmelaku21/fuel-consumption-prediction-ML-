@@ -1,56 +1,72 @@
-# Fuel Consumption Prediction System 🚗⛽
+# Fuel Consumption Prediction System for ESLSE 🚛⛽
 
-## 1. Project Overview
-The Fuel Consumption Prediction System is a machine learning–based application designed to estimate vehicle fuel consumption using trip and vehicle-related parameters.  
-The system helps analyze fuel usage patterns and provides accurate predictions based on historical data.
+Overview
+The Fuel Consumption Prediction System is a machine learning–based tool designed to help Ethiopian Shipping and Logistics Services Enterprise (ESLSE) accurately estimate fuel usage for each vehicle trip. By analyzing operational data such as distance, speed, vehicle load, engine capacity, and vehicle age, the system replaces manual estimation methods with a data-driven, predictive model, improving cost efficiency and operational planning.
 
-This project includes:
-- Data preprocessing and feature selection
-- Machine learning model training and evaluation
-- Model persistence using Joblib
-- An interactive web-based interface built with Streamlit
+This project demonstrates how predictive analytics can enhance fuel management, route planning, and fleet optimization in large-scale logistics operations.
 
 ---
+ ## Business Motivation for ESLSE
 
-## 2. Problem Statement
-Fuel consumption is influenced by multiple factors such as travel distance, speed, vehicle load, engine capacity, and vehicle age.  
-Manually estimating fuel usage can be inaccurate and inefficient.
+Fuel is one of the largest operational expenses for ESLSE. Current estimation methods rely on:
 
-This project aims to:
-- Build a predictive model to estimate fuel consumption
-- Reduce manual calculation errors
-- Provide a user-friendly interface for quick predictions
+- Fixed fuel-per-kilometer averages
 
----
+- Historical records and spreadsheets
 
-## 3. Dataset Description
-The dataset used in this project contains historical trip and vehicle information.
+- Supervisor experience and judgment
 
-### Input Features:
-- **Distance (km)** – Total distance traveled
-- **Average Speed (km/h)** – Mean speed during the trip
-- **Vehicle Load (kg)** – Load carried by the vehicle
-- **Engine Capacity (liters)** – Engine size
-- **Vehicle Age (years)** – Age of the vehicle
+## Challenges of current methods:
+
+- Inaccurate fuel budgeting
+
+- Overestimation or underestimation of fuel needs
+
+- Limited identification of inefficient vehicles
+
+- Low transparency and accountability
+
+The predictive system addresses these challenges by estimating fuel consumption at the trip level, enabling proactive decision-making and cost control.
+
+### Key Features
+
+- Data-driven fuel prediction: Uses machine learning to estimate fuel consumption for every trip
+
+-Feature selection: Lasso Regression identifies the most influential factors affecting fuel use
+
+-High interpretability: Linear Regression allows ESLSE managers to understand how each factor impacts consumption
+
+-Web-based interface: Streamlit app enables non-technical users to interact with the system
+
+# Dataset
+
+The dataset simulates real ESLSE trip data and includes operationally relevant variables.
+
+Input Features:
+
+Feature	Description
+Distance (km):-Total distance traveled in a trip
+Average Speed (km/h):- Mean speed during the trip
+Vehicle Load (kg):-	Weight of transported cargo
+Engine Capacity (liters):-	Vehicle engine size
+Vehicle Age (years)	:- Age of the vehicle
 
 ### Target Variable:
 - **Fuel Consumption (liters)** – Total fuel used for the trip
 
----
+##  Machine Learning Approach
 
-## 4. Machine Learning Approach
-
-### 4.1 Feature Selection
+### Feature Selection
 - Feature selection is performed using **Lasso Regression** combined with `SelectFromModel`
 - This helps reduce irrelevant features and improves model performance
 
-### 4.2 Model Training
+### Model Training
 - Algorithm used: **Linear Regression**
 - Data split:
   - 80% Training
   - 20% Testing
 
-### 4.3 Model Evaluation
+### Model Evaluation
 The model is evaluated using:
 - **Root Mean Squared Error (RMSE)**
 - **R² Score**
@@ -74,6 +90,15 @@ The Streamlit web application allows users to:
 - Use the system without modifying any code
 
 ---
+## Benefits to ESLSE:
+
+-Accurate fuel budgeting
+
+-Route and vehicle efficiency analysis
+
+-Reduced fuel wastage and emissions
+
+-Data-driven decision-making support
 
 ## 7. Project Structure
 FUEL_CONSUMPTION_PREDICTION/
@@ -103,7 +128,15 @@ FUEL_CONSUMPTION_PREDICTION/
 │   ├── script.js                   # JavaScript logic
 │   └── style.css                   # CSS styling
 
+# Web Application (Streamlit)
 
+The Streamlit app allows ESLSE staff to:
+
+Enter trip details (distance, speed, load, etc.)
+
+Receive predicted fuel consumption instantly
+
+Use a non-technical, user-friendly interface without programming knowledge
 
 ## 8. How to Run the Project
 
@@ -125,11 +158,16 @@ Scikit-learn
 Joblib
 Streamlit
 
-### Future Improvements
-Support multiple trips and summary reports
-Add input validation and error handling
-Store prediction history
-Deploy the application online (Streamlit Cloud / Docker)
+### Future Enhancements for ESLSE
+-Integrate real-time GPS and telematics data for dynamic predictions
+
+-Include driver behavior analysis to identify fuel-inefficient driving patterns
+
+-Enable fleet-level optimization and anomaly detection
+
+-Maintain prediction history for reporting and auditing
+
+-Deploy on cloud platforms or Docker for enterprise scalability
 
 
 ## Dependencies Note
