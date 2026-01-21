@@ -1,8 +1,11 @@
 # Fuel Consumption Prediction System for ESLSE 🚛⛽
 
-Overview
+Overview  
+
 The Fuel Consumption Prediction System is a machine learning–based application developed to support Ethiopian Shipping and Logistics Services Enterprise (ESLSE) in accurately estimating fuel usage for vehicle trips.
+
 By analyzing operational parameters such as distance, speed, vehicle load, engine capacity, and vehicle age, the system replaces traditional manual estimation methods with a data-driven predictive approach, improving fuel budgeting, operational planning, and fleet efficiency.
+
 This project demonstrates how predictive analytics and web-based decision support systems can enhance fuel management in large-scale logistics operations.
 
 ---
