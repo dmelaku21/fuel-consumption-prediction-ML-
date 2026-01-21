@@ -1,7 +1,15 @@
+# add above new
+import streamlit as st
+import joblib
+from auth import authenticate
+# add above new
 from flask import Flask, request, jsonify, render_template_string
 import joblib
 import numpy as np
-
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+    st.session_state.user_role = None
+# add above new
 app = Flask(__name__)
 
 # Load trained model and feature selector
