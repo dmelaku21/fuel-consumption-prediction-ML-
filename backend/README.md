@@ -86,7 +86,7 @@ The trained model achieved a high R² score, indicating strong predictive perfor
 
 ---
 
-## 5. System Architecture
+## . System Architecture
 The system consists of three main components:
 1. **Training Module** – Trains and saves the machine learning model
 2. **Prediction Module** – Loads the trained model and predicts fuel consumption
@@ -94,12 +94,16 @@ The system consists of three main components:
 
 ---
 
-## 6. Web Application (Streamlit)
+## Web Application (Streamlit)
 
 Secure login system
+
 User-friendly trip data entry
+
 Instant fuel consumption prediction
+
 Prediction history tracking
+
 Interactive charts and analytics
 ---
 ## Benefits to ESLSE:
@@ -114,7 +118,7 @@ Interactive charts and analytics
 
 -Strong decision-support for fleet management
 
-## 7. Project Structure
+##  Project Structure
 
 ```
 FUEL_CONSUMPTION_PREDICTION/
@@ -160,7 +164,7 @@ Receive predicted fuel consumption instantly
 
 Use a non-technical, user-friendly interface without programming knowledge
 
-## 8. How to Run the Project
+##  How to Run the Project
 
 ### Step 1: Install Required Libraries
 pip install -r requirements.txt
@@ -172,7 +176,7 @@ streamlit run backend/app.py
 Open your browser and visit:
 http://localhost:8502
 
-### 9. Technologies Used
+###  Technologies Used
 Python 3
 NumPy
 Pandas
