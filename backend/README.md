@@ -51,16 +51,18 @@ This system predicts fuel consumption at the individual trip level, enabling pro
     Includes analytics, charts, and prediction history
 # Dataset
 
-The dataset simulates real ESLSE trip data and includes operationally relevant variables.
+## Dataset
+
+The dataset used in this project is sourced from a publicly available Kaggle vehicle fuel consumption dataset.
+
+Due to the lack of publicly accessible fuel consumption records from Ethiopian Shipping and Logistics Services Enterprise (ESLSE), the Kaggle dataset was cleaned, transformed, and contextually adapted to reflect realistic ESLSE fleet operations.
 
 Input Features:
-
-Feature	Description
-Distance (km):-Total distance traveled in a trip
-Average Speed (km/h):- Mean speed during the trip
-Vehicle Load (kg):-	Weight of transported cargo
-Engine Capacity (liters):-	Vehicle engine size
-Vehicle Age (years)	:- Age of the vehicle
+- Distance (km)
+- Average Speed (km/h)
+- Vehicle Load (kg)
+- Engine Capacity (liters)
+- Vehicle Age (years)
 
 ### Target Variable:
 - **Fuel Consumption (liters)** – Total fuel used for the trip
@@ -128,7 +130,7 @@ FUEL_CONSUMPTION_PREDICTION/
 ├── requirements.txt           # Required Python libraries
 │
 ├── data/
-│   └── fuel_data.csv          # Dataset used for training and evaluation
+│   └── ESLSE_fuel_data_adapted. csv     # Dataset used for training and evaluation
 │
 ├── backend/
 │   ├── train_model.py         # Script to train and evaluate the ML model
